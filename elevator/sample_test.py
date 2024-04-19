@@ -9,5 +9,3 @@ class Test(unittest.TestCase):
 
 	def sample_test_2(self):
 		self.assertEqual(-4, calculate_floor('DDDD'))
-
-print(calculate_floor('UUDU'),calculate_floor('DDDD'))

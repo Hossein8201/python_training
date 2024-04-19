@@ -4,3 +4,6 @@ def calculate_floor(string):
         if(string[i]=='U'):     floor+=1       
         else:   floor-=1
     return floor
+
+print(calculate_floor('UUDU'))
+print(calculate_floor('DDDD'))
