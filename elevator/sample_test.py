@@ -1,5 +1,5 @@
 import unittest
-from solution import calculate_floor
+from elevator.calculator import calculate_floor
 
 
 class Test(unittest.TestCase):
