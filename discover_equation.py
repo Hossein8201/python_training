@@ -22,17 +22,23 @@ def function3(x,y):
 
 number = int(input())
 answer_list = []
+flag = 0
 for i in range(number):
-    list = input().split()
-    if(float(list[0]))
-    if function1(x,y):
-        answer_list += [1]
-    if function2(x,y):
-        answer_list += [2]
-    if function3(x,y):
-        answer_list += [3]
-for i in range(1,4):
-    if answer_list.count(i) == number:
-        print(i)
-        exit()
-print('No ones')
+    try:
+        x , y = map(float,input().split())
+        if function1(x,y):
+            answer_list += [1]
+        if function2(x,y):
+            answer_list += [2]
+        if function3(x,y):
+            answer_list += [3]
+    except:
+        flag = 1
+if(flag==0):
+    for i in range(1,4):
+        if answer_list.count(i) == number:
+            print(i)
+            exit()
+    print('No ones')
+else:
+    print('No ones')
